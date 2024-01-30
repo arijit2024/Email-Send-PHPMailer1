@@ -10,7 +10,7 @@ require 'PHPMailer/PHPMailer.php';
 require 'PHPMailer/SMTP.php';
 
 // Include FPDF library
-require('../../fpdf/fpdf.php');
+require('fpdf/fpdf.php');
 
 // Create a PDF class based on FPDF
 class PDF extends FPDF
@@ -18,7 +18,7 @@ class PDF extends FPDF
  function Header()
     {
          // Add an image
-        $this->Image('../assets/images/mmsLogo.png', 10, 8, 15);
+        // $this->Image('../assets/images/mmsLogo.png', 10, 8, 15);
 
         // Set font
         $this->SetFont('Arial', 'B', 12);
@@ -177,7 +177,7 @@ try {
     $mail->Host       = 'smtp.gmail.com'; // Set the SMTP server to send through
     $mail->SMTPAuth   = true; // Enable SMTP authentication
     $mail->Username   = 'arijitsarkar1998x@gmail.com'; // SMTP username
-    $mail->Password   = 'wgxhxyydzejdgzuf'; // SMTP password
+    $mail->Password   = 'Password'; // SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Enable implicit TLS encryption
     $mail->Port       = 465; // TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
