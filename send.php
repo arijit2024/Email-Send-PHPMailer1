@@ -26,7 +26,7 @@ try {
 
     //Recipients
     $mail->setFrom('arijitsarkar1998x@gmail.com', 'Arijita');
-    $mail->addAddress('arijitsarkar2111@gmail.com', 'arijit2');     //Add a recipient
+    $mail->addAddress('arijitsarkar2111@gmail.com', 'sum');     //Add a recipient
 
     //Attachments
     // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
